@@ -1,0 +1,230 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "AngleSharp/1.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/AngleSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AngleSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CliWrap/3.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/CliWrap.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/CliWrap.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "YoutubeExplode/6.5.4": {
+        "type": "package",
+        "dependencies": {
+          "AngleSharp": "1.2.0"
+        },
+        "compile": {
+          "lib/net9.0/YoutubeExplode.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/YoutubeExplode.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "YoutubeExplode.Converter/6.5.4": {
+        "type": "package",
+        "dependencies": {
+          "CliWrap": "3.8.1",
+          "YoutubeExplode": "6.5.4"
+        },
+        "compile": {
+          "lib/net9.0/YoutubeExplode.Converter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/YoutubeExplode.Converter.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AngleSharp/1.2.0": {
+      "sha512": "uF/PzSCVcb+b2nqVvHZbOqexoJ9R6QLjonugPf0PQl+0h7YKaFZeXyspctbHe5HGlx7/Iuk5BErtk+t63ac/ZA==",
+      "type": "package",
+      "path": "anglesharp/1.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "anglesharp.1.2.0.nupkg.sha512",
+        "anglesharp.nuspec",
+        "lib/net462/AngleSharp.dll",
+        "lib/net462/AngleSharp.xml",
+        "lib/net472/AngleSharp.dll",
+        "lib/net472/AngleSharp.xml",
+        "lib/net6.0/AngleSharp.dll",
+        "lib/net6.0/AngleSharp.xml",
+        "lib/net7.0/AngleSharp.dll",
+        "lib/net7.0/AngleSharp.xml",
+        "lib/net8.0/AngleSharp.dll",
+        "lib/net8.0/AngleSharp.xml",
+        "lib/netstandard2.0/AngleSharp.dll",
+        "lib/netstandard2.0/AngleSharp.xml",
+        "logo.png"
+      ]
+    },
+    "CliWrap/3.8.1": {
+      "sha512": "iSjGhNhIB0gg2ihaMNZ5ZKx1B29/i5F9dvFxa2f8mLCiHluXKHUXUpvg0abEZ0vwMpo5u9PNVdWTVyhFLKZihQ==",
+      "type": "package",
+      "path": "cliwrap/3.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cliwrap.3.8.1.nupkg.sha512",
+        "cliwrap.nuspec",
+        "favicon.png",
+        "lib/net8.0/CliWrap.dll",
+        "lib/net8.0/CliWrap.xml",
+        "lib/net9.0/CliWrap.dll",
+        "lib/net9.0/CliWrap.xml",
+        "lib/netstandard2.0/CliWrap.dll",
+        "lib/netstandard2.0/CliWrap.xml",
+        "lib/netstandard2.1/CliWrap.dll",
+        "lib/netstandard2.1/CliWrap.xml"
+      ]
+    },
+    "YoutubeExplode/6.5.4": {
+      "sha512": "SWMvvvC/xEjkDEnQW28xeBXn0mgB7tsNtXvtcMpxYioyVuUWzsx94oWVQgUZIaT+Zbmvj03LaKIwK9mTGKMZQg==",
+      "type": "package",
+      "path": "youtubeexplode/6.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "favicon.png",
+        "lib/net9.0/YoutubeExplode.dll",
+        "lib/net9.0/YoutubeExplode.xml",
+        "lib/netstandard2.0/YoutubeExplode.dll",
+        "lib/netstandard2.0/YoutubeExplode.xml",
+        "youtubeexplode.6.5.4.nupkg.sha512",
+        "youtubeexplode.nuspec"
+      ]
+    },
+    "YoutubeExplode.Converter/6.5.4": {
+      "sha512": "Sa5S+7MGXnJk+svpUPOvoIK7QWQlUfY4liZRUUPv7oTAIyk7IY4SVHJDAG1dOAhQMh2734nBrs9y2ABlwrqJxg==",
+      "type": "package",
+      "path": "youtubeexplode.converter/6.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "favicon.png",
+        "lib/net9.0/YoutubeExplode.Converter.dll",
+        "lib/net9.0/YoutubeExplode.Converter.xml",
+        "lib/netstandard2.0/YoutubeExplode.Converter.dll",
+        "lib/netstandard2.0/YoutubeExplode.Converter.xml",
+        "youtubeexplode.converter.6.5.4.nupkg.sha512",
+        "youtubeexplode.converter.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "YoutubeExplode >= 6.5.4",
+      "YoutubeExplode.Converter >= 6.5.4"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\João\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj",
+      "projectName": "Youtubelib",
+      "projectPath": "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj",
+      "packagesPath": "C:\\Users\\João\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\João\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "YoutubeExplode": {
+            "target": "Package",
+            "version": "[6.5.4, )"
+          },
+          "YoutubeExplode.Converter": {
+            "target": "Package",
+            "version": "[6.5.4, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

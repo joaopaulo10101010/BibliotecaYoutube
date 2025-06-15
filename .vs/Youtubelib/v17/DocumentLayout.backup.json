@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jo\u00E3o\\Desktop\\git repositorios\\Youtubelib\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|c:\\users\\jo\u00E3o\\desktop\\git repositorios\\youtubelib\\youtubelib\\youtubevideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|solutionrelative:youtubelib\\youtubevideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|c:\\users\\jo\u00E3o\\desktop\\git repositorios\\youtubelib\\youtubelib\\youtubelib.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|solutionrelative:youtubelib\\youtubelib.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Youtubelib",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj",
+              "RelativeDocumentMoniker": "Youtubelib\\Youtubelib.csproj",
+              "ToolTip": "C:\\Users\\Jo\u00E3o\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj",
+              "RelativeToolTip": "Youtubelib\\Youtubelib.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-15T05:54:01.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YoutubeVideo.cs",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\YoutubeVideo.cs",
+              "RelativeDocumentMoniker": "Youtubelib\\YoutubeVideo.cs",
+              "ToolTip": "C:\\Users\\Jo\u00E3o\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\YoutubeVideo.cs",
+              "RelativeToolTip": "Youtubelib\\YoutubeVideo.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAIAwwAsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T03:25:11.483Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\bin\Debug\net9.0\Youtubelib.deps.json
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\bin\Debug\net9.0\Youtubelib.dll
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\bin\Debug\net9.0\Youtubelib.pdb
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.csproj.AssemblyReference.cache
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.AssemblyInfoInputs.cache
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.AssemblyInfo.cs
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.csproj.CoreCompileInputs.cache
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.dll
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\refint\Youtubelib.dll
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.pdb
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\ref\Youtubelib.dll
