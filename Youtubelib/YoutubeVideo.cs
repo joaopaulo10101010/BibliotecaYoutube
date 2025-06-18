@@ -1,9 +1,67 @@
 ﻿using YoutubeExplode;
 using YoutubeExplode.Videos.Streams;
 using System.Diagnostics;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Text.Json;
+using AngleSharp.Media;
+
+
 
 namespace Youtubelib
 {
+
+    public class YoutubePesquisa
+    {
+        private string _apikey = "";
+        public YoutubePesquisa()
+        {
+
+        }
+
+        public void ApiKey(string key)
+        {
+            _apikey = key;
+        }
+
+        public async Task<Video[]> PesquisaVideos(string pesquisa)
+        {
+            HttpClient client = new HttpClient();
+            string youtubeconnection = $"https://www.googleapis.com/youtube/v3/search?part=snippet&q={Uri.EscapeDataString(pesquisa)}&type=video&maxResults=5&key={_apikey}";
+
+            try
+            {
+                var resposta = await client.GetStringAsync(youtubeconnection);
+                var json = JsonDocument.Parse(resposta);
+                var items = json.RootElement.GetProperty("items");
+                var resuPesquisa = new Video[items.GetArrayLength()];
+
+                for (int i = 0; i < items.GetArrayLength(); i++)
+                {
+                    var item = items[i];
+                    var id = item.GetProperty("id").GetProperty("videoId").GetString();
+                    var title = item.GetProperty("snippet").GetProperty("title").GetString();
+                    resuPesquisa[i] = new Video { Id = id, titulo = title };
+                }
+
+                return resuPesquisa;
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine($"Ocorreu um erro ao realizar a pesquisa: {ex.Message}");
+                return null;
+            }
+        }
+
+        public class Video
+        {
+            public string titulo { get; set; } = "Sem titulo";
+            public string Id { get; set; } = "Sem Id";
+        }
+    }
+
+
     public class YoutubeVideo
     {
         private readonly YoutubeClient _youtube = new YoutubeClient();
