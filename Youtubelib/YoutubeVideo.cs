@@ -5,8 +5,6 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Text.Json;
-using AngleSharp.Media;
-using System.Diagnostics;
 
 
 namespace Youtubelib
@@ -15,7 +13,7 @@ namespace Youtubelib
     {
         public string RequisitosString()
         {
-            return "1 - Biblioteca Youtube Explode(NuGet)\n2 - Biblioteca Youtube Converter(NuGEt)\n3 - FFMPEG (https://ffmpeg.org/download.html)";
+            return "1 - Biblioteca Youtube Explode(NuGet)\n2 - SDK FFMPEG (https://ffmpeg.org/download.html)";
         }
     }
 
@@ -95,6 +93,8 @@ namespace Youtubelib
         public string url = "https://www.youtube.com/watch?v=VL0qz5l-zWo";
         private YoutubeExplode.Videos.Video video;
         private string ffmpeg = "C:/ffmpeg-7.1.1-essentials_build/bin/ffmpeg.exe";
+        public IProgress<double> progressoAudio = new Progress<double>();
+        public IProgress<double> progressoVideo = new Progress<double>();
 
         public YoutubeVideo(string Url)
         {
@@ -194,7 +194,7 @@ namespace Youtubelib
             }
             else
             {
-                if (force == true) 
+                if (force == true)
                 {
                     System.IO.File.Delete(path_saida);
                     bool completo = false;
@@ -218,7 +218,7 @@ namespace Youtubelib
                     Console.WriteLine("Ja possui um arquivo com o nome do video na pasta");
                 }
             }
-            
+
         }
 
         private async Task<bool> JuntarAudioVideo(string video, string audio, string saida)
@@ -254,14 +254,18 @@ namespace Youtubelib
             return true;
         }
 
+
         public async Task<bool> DownloadAudioLocal(string destino_com_nome)
         {
+
             var youtube = _youtube;
             var videoUrl = url;
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(videoUrl);
             var streamInfo = streamManifest.GetAudioOnlyStreams().GetWithHighestBitrate();
-            await youtube.Videos.Streams.DownloadAsync(streamInfo, destino_com_nome);
+            await youtube.Videos.Streams.DownloadAsync(streamInfo, destino_com_nome, progressoAudio);
             return true;
         }
+
+        
     }
 }
