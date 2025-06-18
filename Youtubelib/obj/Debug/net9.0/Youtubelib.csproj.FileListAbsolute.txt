@@ -10,3 +10,4 @@ C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Y
 C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\refint\Youtubelib.dll
 C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.pdb
 C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\ref\Youtubelib.dll
+C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.sourcelink.json

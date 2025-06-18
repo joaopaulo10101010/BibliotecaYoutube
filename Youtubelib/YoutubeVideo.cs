@@ -6,15 +6,22 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Text.Json;
 using AngleSharp.Media;
-
+using System.Diagnostics;
 
 
 namespace Youtubelib
 {
+    public class YoutubeHelp
+    {
+        public string RequisitosString()
+        {
+            return "1 - Biblioteca Youtube Explode(NuGet)\n2 - Biblioteca Youtube Converter(NuGEt)\n3 - FFMPEG (https://ffmpeg.org/download.html)";
+        }
+    }
 
     public class YoutubePesquisa
     {
-        private string _apikey = "";
+        private string _apikey = "AIzaSyAarMlL2GjBftiwwLnVimSXRBvR1gkmjh4";
         public YoutubePesquisa()
         {
 
@@ -25,10 +32,11 @@ namespace Youtubelib
             _apikey = key;
         }
 
-        public async Task<Video[]> PesquisaVideos(string pesquisa)
+        public async Task<Video[]> PesquisaVideos(string pesquisa,int maxresultados)
         {
+            string maxresult = Convert.ToString(maxresultados);
             HttpClient client = new HttpClient();
-            string youtubeconnection = $"https://www.googleapis.com/youtube/v3/search?part=snippet&q={Uri.EscapeDataString(pesquisa)}&type=video&maxResults=5&key={_apikey}";
+            string youtubeconnection = $"https://www.googleapis.com/youtube/v3/search?part=snippet&q={Uri.EscapeDataString(pesquisa)}&type=video&maxResults={maxresult}&key={_apikey}";
 
             try
             {
@@ -44,23 +52,42 @@ namespace Youtubelib
                     var title = item.GetProperty("snippet").GetProperty("title").GetString();
                     resuPesquisa[i] = new Video { Id = id, titulo = title };
                 }
-
+                client.Dispose();
                 return resuPesquisa;
             }
             catch (Exception ex) 
             {
+                client.Dispose();
                 Console.WriteLine($"Ocorreu um erro ao realizar a pesquisa: {ex.Message}");
                 return null;
             }
         }
-
-        public class Video
+    }
+    public class Video
+    {
+        public string titulo { get; set; } = "Sem titulo";
+        public string Id { get; set; } = "Sem Id";
+        public string video_path {  get; set; }
+        public void Play()
         {
-            public string titulo { get; set; } = "Sem titulo";
-            public string Id { get; set; } = "Sem Id";
+            if (video_path != null)
+            {
+                try
+                {
+                    ProcessStartInfo processo = new ProcessStartInfo() { FileName = video_path, UseShellExecute = true };
+                    Process.Start(processo);
+                }
+                catch (Exception erro)
+                {
+                    Console.WriteLine($"Nao foi possivel reproduzir o video, erro: {erro.Message}");
+                }
+            }
+            else 
+            { 
+                Console.WriteLine("Objeto sem caminho para o video");
+            }
         }
     }
-
 
     public class YoutubeVideo
     {
@@ -71,7 +98,7 @@ namespace Youtubelib
 
         public YoutubeVideo(string Url)
         {
-            this.url = Url;
+            url = Url;
         }
 
         /// <summary>
@@ -145,23 +172,53 @@ namespace Youtubelib
             }
         }
 
-        public async Task BaixarVideo(string path_saida = "audiovideo.mp4")
+        public async Task BaixarVideo(string path_saida = "audiovideo.mp4", bool force = false)
         {
-            bool completo = false;
-            string tempname = System.DateTime.Now.ToString("yyyyMMddHHmmss");
-            string tempaudio = $"{tempname}audio.mp4";
-            string tempvideo = $"{tempname}video.mp4";
-
-            if (await DownloadAudioLocal(tempaudio) && await DownloadVideoLocal(tempvideo))
+            if (System.IO.File.Exists(path_saida) == false)
             {
-                completo = await JuntarAudioVideo(tempvideo, tempaudio, path_saida);
-            }
+                bool completo = false;
+                string tempname = System.DateTime.Now.ToString("yyyyMMddHHmmss");
+                string tempaudio = $"{tempname}audio.mp4";
+                string tempvideo = $"{tempname}video.mp4";
 
-            if (completo)
-            {
-                System.IO.File.Delete(tempaudio);
-                System.IO.File.Delete(tempvideo);
+                if (await DownloadAudioLocal(tempaudio) && await DownloadVideoLocal(tempvideo))
+                {
+                    completo = await JuntarAudioVideo(tempvideo, tempaudio, path_saida);
+                }
+
+                if (completo)
+                {
+                    System.IO.File.Delete(tempaudio);
+                    System.IO.File.Delete(tempvideo);
+                }
             }
+            else
+            {
+                if (force == true) 
+                {
+                    System.IO.File.Delete(path_saida);
+                    bool completo = false;
+                    string tempname = System.DateTime.Now.ToString("yyyyMMddHHmmss");
+                    string tempaudio = $"{tempname}audio.mp4";
+                    string tempvideo = $"{tempname}video.mp4";
+
+                    if (await DownloadAudioLocal(tempaudio) && await DownloadVideoLocal(tempvideo))
+                    {
+                        completo = await JuntarAudioVideo(tempvideo, tempaudio, path_saida);
+                    }
+
+                    if (completo)
+                    {
+                        System.IO.File.Delete(tempaudio);
+                        System.IO.File.Delete(tempvideo);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Ja possui um arquivo com o nome do video na pasta");
+                }
+            }
+            
         }
 
         private async Task<bool> JuntarAudioVideo(string video, string audio, string saida)
