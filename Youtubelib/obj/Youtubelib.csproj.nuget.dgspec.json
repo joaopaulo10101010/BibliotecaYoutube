@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj": {}
+    "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj": {
+    "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj",
+        "projectUniqueName": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj",
         "projectName": "Youtubelib",
-        "projectPath": "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj",
+        "projectPath": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj",
         "packagesPath": "C:\\Users\\João\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\obj\\",
+        "outputPath": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -75,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

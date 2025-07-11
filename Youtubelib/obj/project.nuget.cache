@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AZYfJ3wBfi0=",
+  "dgSpecHash": "6N6HPOh3kaY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\João\\Desktop\\git repositorios\\Youtubelib\\Youtubelib\\Youtubelib.csproj",
+  "projectFilePath": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\João\\.nuget\\packages\\anglesharp\\1.2.0\\anglesharp.1.2.0.nupkg.sha512",
     "C:\\Users\\João\\.nuget\\packages\\cliwrap\\3.8.1\\cliwrap.3.8.1.nupkg.sha512",

@@ -1,0 +1,8 @@
+E:\Bibliotecas C\Youtubelib\youtube.config
+E:\Bibliotecas C\Youtubelib\Youtubelib.dll
+E:\Bibliotecas C\Youtubelib\Youtubelib.deps.json
+E:\Bibliotecas C\Youtubelib\Youtubelib.pdb
+E:\Bibliotecas C\Youtubelib\AngleSharp.dll
+E:\Bibliotecas C\Youtubelib\CliWrap.dll
+E:\Bibliotecas C\Youtubelib\YoutubeExplode.dll
+E:\Bibliotecas C\Youtubelib\YoutubeExplode.Converter.dll

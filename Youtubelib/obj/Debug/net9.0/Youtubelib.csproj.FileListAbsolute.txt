@@ -11,3 +11,17 @@ C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\r
 C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.pdb
 C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\ref\Youtubelib.dll
 C:\Users\João\Desktop\git repositorios\Youtubelib\Youtubelib\obj\Debug\net9.0\Youtubelib.sourcelink.json
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Debug\net9.0\youtube.config
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Debug\net9.0\Youtubelib.deps.json
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Debug\net9.0\Youtubelib.dll
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Debug\net9.0\Youtubelib.pdb
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.csproj.AssemblyReference.cache
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.GeneratedMSBuildEditorConfig.editorconfig
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.AssemblyInfoInputs.cache
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.AssemblyInfo.cs
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.csproj.CoreCompileInputs.cache
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.sourcelink.json
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.dll
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\refint\Youtubelib.dll
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\Youtubelib.pdb
+D:\repositorio\BibliotecaYoutube\Youtubelib\obj\Debug\net9.0\ref\Youtubelib.dll

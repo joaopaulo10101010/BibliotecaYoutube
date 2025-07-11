@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="youtube.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="youtube.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="YoutubeExplode" Version="6.5.4" />
     <PackageReference Include="YoutubeExplode.Converter" Version="6.5.4" />
   </ItemGroup>

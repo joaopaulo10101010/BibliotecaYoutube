@@ -5,6 +5,8 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Text.Json;
+using System.Configuration;
+
 
 
 namespace Youtubelib
@@ -19,10 +21,12 @@ namespace Youtubelib
 
     public class YoutubePesquisa
     {
-        private string _apikey = "AIzaSyAarMlL2GjBftiwwLnVimSXRBvR1gkmjh4";
+        private string _apikey;
         public YoutubePesquisa()
         {
-
+            var doc = new System.Xml.XmlDocument();
+            doc.Load("youtube.config");
+            _apikey = doc.SelectSingleNode("//add[@key='MinhaChaveAPI']")?.Attributes["value"].Value;
         }
 
         public void ApiKey(string key)
