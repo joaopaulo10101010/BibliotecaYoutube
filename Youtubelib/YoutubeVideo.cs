@@ -1,11 +1,12 @@
-﻿using YoutubeExplode;
-using YoutubeExplode.Videos.Streams;
-using System.Diagnostics;
-using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Text.Json;
+﻿using System;
 using System.Configuration;
+using System.Diagnostics;
+using System.Net.Http;
+using System.Reflection;
+using System.Text.Json;
+using System.Threading.Tasks;
+using YoutubeExplode;
+using YoutubeExplode.Videos.Streams;
 
 
 
@@ -24,8 +25,10 @@ namespace Youtubelib
         private string _apikey;
         public YoutubePesquisa()
         {
+            var assembly = Assembly.GetExecutingAssembly();
+            using var stream = assembly.GetManifestResourceStream("Youtubelib.youtube.config"); // Nome exato do namespace + nome do arquivo
             var doc = new System.Xml.XmlDocument();
-            doc.Load("youtube.config");
+            doc.Load(stream);
             _apikey = doc.SelectSingleNode("//add[@key='MinhaChaveAPI']")?.Attributes["value"].Value;
         }
 

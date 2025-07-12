@@ -1,4 +1,3 @@
-D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\youtube.config
 D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\Youtubelib.deps.json
 D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\Youtubelib.dll
 D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\Youtubelib.pdb

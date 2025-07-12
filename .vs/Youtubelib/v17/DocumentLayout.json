@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\repositorio\\BibliotecaYoutube\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|d:\\repositorio\\bibliotecayoutube\\youtubelib\\youtubelib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|solutionrelative:youtubelib\\youtubelib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|d:\\repositorio\\bibliotecayoutube\\youtubelib\\youtubevideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|solutionrelative:youtubelib\\youtubevideo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|d:\\repositorio\\bibliotecayoutube\\youtubelib\\youtube.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|solutionrelative:youtubelib\\youtube.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|d:\\repositorio\\bibliotecayoutube\\youtubelib\\youtubelib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E8631D19-223E-4CC7-9D6A-123955E9B765}|Youtubelib\\Youtubelib.csproj|solutionrelative:youtubelib\\youtubelib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,52 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Youtubelib.csproj",
               "DocumentMoniker": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj",
               "RelativeDocumentMoniker": "Youtubelib\\Youtubelib.csproj",
               "ToolTip": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj",
               "RelativeToolTip": "Youtubelib\\Youtubelib.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-11T23:29:52.891Z"
+              "WhenOpened": "2025-07-11T23:29:52.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "youtube.config",
               "DocumentMoniker": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\youtube.config",
               "RelativeDocumentMoniker": "Youtubelib\\youtube.config",
               "ToolTip": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\youtube.config",
               "RelativeToolTip": "Youtubelib\\youtube.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-07-11T23:31:07.226Z"
+              "WhenOpened": "2025-07-11T23:31:07.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Youtubelib",
               "DocumentMoniker": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj",
               "RelativeDocumentMoniker": "Youtubelib\\Youtubelib.csproj",
               "ToolTip": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\Youtubelib.csproj",
               "RelativeToolTip": "Youtubelib\\Youtubelib.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-15T05:54:01.548Z"
+              "WhenOpened": "2025-06-15T05:54:01.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "YoutubeVideo.cs",
               "DocumentMoniker": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\YoutubeVideo.cs",
               "RelativeDocumentMoniker": "Youtubelib\\YoutubeVideo.cs",
               "ToolTip": "D:\\repositorio\\BibliotecaYoutube\\Youtubelib\\YoutubeVideo.cs",
               "RelativeToolTip": "Youtubelib\\YoutubeVideo.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T03:25:11.483Z",
               "EditorCaption": ""

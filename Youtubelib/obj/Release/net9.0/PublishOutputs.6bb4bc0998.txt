@@ -1,0 +1,7 @@
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\publish\Youtubelib.dll
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\publish\Youtubelib.deps.json
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\publish\Youtubelib.pdb
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\publish\AngleSharp.dll
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\publish\CliWrap.dll
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\publish\YoutubeExplode.dll
+D:\repositorio\BibliotecaYoutube\Youtubelib\bin\Release\net9.0\publish\YoutubeExplode.Converter.dll
